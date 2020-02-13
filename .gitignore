@@ -1,0 +1,5 @@
+### DevOps Scripts ###
+# Avoid revealing secret keys
+config.json
+
+
