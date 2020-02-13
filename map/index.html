@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       /* set the size of the div element that contains the map */
+      #map {
+        height: 200px;  /* the height is 400 pixels */
+        width: 100%;  /* the width is the width of the web page */
+       }
+    </style>
+  </head>
+  <body>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of MEtuition
+  var MEtuition = {lat: -27.488930451479, lng: 153.02777869091};
+  // The map, centered at MEtuition
+  var map = new google.maps.Map(
+      document.getElementById('map'), {
+	      zoom: 13, 
+	      center: MEtuition, 
+	      panControl: false, 
+	      streetViewControl: false,
+	      mapTypeControl: false
+	      
+      });
+  // The marker, positioned at MEtuition
+  var marker = new google.maps.Marker({position: MEtuition, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFpnsGR1jjEiHL_G1YcbWNxKQYxz2jMcs&callback=initMap">
+    </script>
+  </body>
+</html>
