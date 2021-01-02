@@ -1,6 +1,6 @@
-# brisbanemetuition.com.au
+# metuition.com
 
-This repository is where the website for my tuition business ([brisbanemetuition.com.au](https://brisbanemetuition.com.au)) is hosted.
+This repository is where the website for my tuition business ([metuition.com](https://metuition.com)) is hosted.
 
 This site is a static export of a wordpress press made several years ago. It was amazing to see how much junk is generated and imported by wordpress and the various plugins used - it is no surprise why Wordpress sites are notoriously slow.
 
